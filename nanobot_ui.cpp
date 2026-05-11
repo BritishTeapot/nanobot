@@ -31,7 +31,7 @@ int main() {
       std::cout << "\n";
     }
     int i, j;
-    std::cout << "Entr plyar " << player << " : ";
+    std::cout << "Entr player " << player << " : ";
     std::cin >> i >> j;
 
     board[i][j] = player;
