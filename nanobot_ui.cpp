@@ -20,7 +20,9 @@ int main() {
 
   board_t board = board_make();
 
-  for (;;) {
+  signs_t player = X;
+
+  while (true) {
 
     for (int i = 0; i != 3; i++) {
       for (int j = 0; j != 3; j++) {
@@ -28,8 +30,8 @@ int main() {
       }
       std::cout << "\n";
     }
-    int i_1, j_1;
-    std::cout << "Entr plyar " player << " : ";
+    int i, j;
+    std::cout << "Entr plyar " << player << " : ";
     std::cin >> i >> j;
 
     board[i][j] = player;
